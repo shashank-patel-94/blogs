@@ -21,8 +21,8 @@ This project is a RESTful API built with NestJS for managing blogs and comments.
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/shashank-patel-94/blogs.git
+    cd directory-name
     ```
 
 2.  **Install dependencies:**
@@ -38,7 +38,7 @@ This project is a RESTful API built with NestJS for managing blogs and comments.
 
       ```
       MONGODB_URI=mongodb://username:password@host:port/databaseName
-      PORT=3000
+      SERVER_PORT=3000
       JWT_SECRET=yourSecretKey # Replace with a strong secret key
       ```
 

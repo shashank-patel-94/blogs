@@ -20,7 +20,7 @@ import { UpdateCommentDto } from './dto/updateComment.dto';
 export class CommentController {
   constructor(private readonly commentsService: CommentService) {}
 
-  @UseGuards(JwtAuthGuard) // Protect this route
+  @UseGuards(JwtAuthGuard)
   @Post(':blogId')
   async create(
     @Param('blogId') blogId: string,
@@ -63,7 +63,7 @@ export class CommentController {
     return this.commentsService.remove(id, userId);
   }
 
-  @UseGuards(JwtAuthGuard) // Protect this route
+  @UseGuards(JwtAuthGuard)
   @Post(':blogId/:commentId/reply')
   async replyToComment(
     @Param('blogId') blogId: string,
